@@ -28,6 +28,7 @@ const login = async (req, res) => {
 
 }
 const logout = async (req, res) => {
+    res.clearCookie("USER")
     await res.json({ massage: "logout is success" })
 
 }
